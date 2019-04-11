@@ -81,6 +81,14 @@ def ledOn(color, tone):
 
 def loser():
         print ( "you are a loser!")
+        ledOn(greenLight, greenTone)
+        ledOn(yellowLight, yellowTone)
+        ledOn(blueLight, BlueTone)
+        ledOn(redLight, redTone)
+        ledOn(greenLight, greenTone)
+        ledOn(yellowLight, yellowTone)
+        ledOn(blueLight, BlueTone)
+        ledOn(redLight, redTone)
 
 
 
