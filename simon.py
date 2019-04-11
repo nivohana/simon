@@ -82,7 +82,7 @@ def ledOn(color, tone):
 def loser():
         print ( "you are a loser!")
         GPIO.output(redLight, GPIO.HIGH)
-        wiringpi.softToneWrite(speaker, 1100)
+        wiringpi.softToneWrite(speaker, 800)
         sleep(0.1)
         GPIO.output(redLight, GPIO.LOW)
         GPIO.output(blueLight, GPIO.HIGH)
@@ -94,22 +94,22 @@ def loser():
         sleep(0.1)
         GPIO.output(yellowLight, GPIO.LOW)
         GPIO.output(greenLight, GPIO.HIGH)
-        wiringpi.softToneWrite(speaker, 790)
+        wiringpi.softToneWrite(speaker, 670)
         sleep(0.1)
         GPIO.output(greenLight, GPIO.LOW) 
-        wiringpi.softToneWrite(speaker, 1100)
+        wiringpi.softToneWrite(speaker, 700)
         sleep(0.1)
         GPIO.output(redLight, GPIO.LOW)
         GPIO.output(blueLight, GPIO.HIGH)
-        wiringpi.softToneWrite(speaker, 1000)
+        wiringpi.softToneWrite(speaker, 1200)
         sleep(0.1)
         GPIO.output(blueLight, GPIO.LOW)
         GPIO.output(yellowLight, GPIO.HIGH)
-        wiringpi.softToneWrite(speaker, 900)
+        wiringpi.softToneWrite(speaker, 800)
         sleep(0.1)
         GPIO.output(yellowLight, GPIO.LOW)
         GPIO.output(greenLight, GPIO.HIGH)
-        wiringpi.softToneWrite(speaker, 790)
+        wiringpi.softToneWrite(speaker, 1250)
         sleep(0.1)
         GPIO.output(greenLight, GPIO.LOW) 
         wiringpi.softToneWrite(speaker, 0)
@@ -117,7 +117,7 @@ def loser():
 
 
 #lets start playing simon!!
-
+print ("let's start playing")
 leds = []
 gameOn = True
 counter = 0
