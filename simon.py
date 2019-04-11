@@ -118,6 +118,7 @@ def loser():
 
 #lets start playing simon!!
 print ("let's start playing")
+sleep(2)
 leds = []
 gameOn = True
 counter = 0
