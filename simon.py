@@ -136,7 +136,7 @@ while (gameOn):
                                   gameOn = False
                                   keepPlay = False
                               
-                         if (x == greenLight):
+                        if (x == greenLight):
                               if (leds[counter] == 3):
                                   counter += 1
                                   keepPlay = False
