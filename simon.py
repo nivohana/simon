@@ -107,7 +107,7 @@ while (gameOn):
         keepPlay = True
         while(keepPlay):
                 while counter < len(leds):
-              keepPlay = False
+                keepPlay = False
 
                         if ((whichButton() == blueLight) and (leds[counter] == 1)):
                                 counter += 1
