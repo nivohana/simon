@@ -12,7 +12,7 @@ blueButton = 19
 
 yellowLight = 20
 yellowButton = 13
-#noa
+
 greenLight = 21
 greenButton = 6
 
