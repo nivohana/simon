@@ -106,24 +106,46 @@ while (gameOn):
         
         while(keepPlay):
                 while counter < len(leds):
-                        keepPlay = False
+                        ##keepPlay = False
+                        x = whichButton()
+             
+                        if (x == redLight):
+                              if (leds[counter] == 0):
+                                 counter += 1
+                                 keepPlay = False
+                              else:
+                                  loser()
+                                  gameOn = False
+                                  keepPlay = False
+                   
+                        if (x == blueLight):
+                              if (leds[counter] == 1):
+                                 counter += 1
+                                 keepPlay = False
+                              else:
+                                  loser()
+                                  gameOn = False
+                                  keepPlay = False
+                         
+                        if (x == yellowLight):
+                              if (leds[counter] == 2):
+                                  counter += 1
+                                  keepPlay = False
+                              else:
+                                  loser()
+                                  gameOn = False
+                                  keepPlay = False
+                              
+                         if (x == greenLight):
+                              if (leds[counter] == 3):
+                                  counter += 1
+                                  keepPlay = False
+                              else:
+                                  loser()
+                                  gameOn = False
+                                  keepPlay = False
 
-                        if ((whichButton() == blueLight) and (leds[counter] == 1)):
-                                counter += 1
-                                keepPlay = False
- 
-                        if ((whichButton() == yellowLight) and (leds[counter] == 2)):
-                                counter += 1
-                                keepPlay = False
-
-                        if ((whichButton() == greenLight) and (leds[counter] == 3)):
-                                counter += 1
-                                keepPlay = False
-
-                        else:
-                                loser()
-                                gameOn = False
-                                keepPlay = False
+                        
 
 print ( " you are a loser!")
 
