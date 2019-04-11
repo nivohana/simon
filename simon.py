@@ -1,4 +1,4 @@
-mport RPi.GPIO as GPIO
+import RPi.GPIO as GPIO
 import wiringpi
 from time import sleep
 import random
@@ -93,9 +93,7 @@ while (gameOn):
         leds.append(random.randint(0,3))
         for i in range (len(leds)):
                 if leds[i] == 0:
-                        ledOn(redLight, redTone)                        
-                        if leds[i] == 0:
-                        ledOn(redLight, redTone)
+                        ledOn(redLight, redTone)                                    
                 if leds[i] == 1:
                         ledOn(blueLight, blueTone)
                 if leds[i] == 2:
@@ -105,9 +103,10 @@ while (gameOn):
 
         counter = 0
         keepPlay = True
+        
         while(keepPlay):
                 while counter < len(leds):
-                  keepPlay = False
+                        keepPlay = False
 
                         if ((whichButton() == blueLight) and (leds[counter] == 1)):
                                 counter += 1
