@@ -81,14 +81,22 @@ def ledOn(color, tone):
 
 def loser():
         print ( "you are a loser!")
-        ledOn(greenLight, greenTone)
-        ledOn(yellowLight, yellowTone)
-        ledOn(blueLight, blueTone)
-        ledOn(redLight, redTone)
-        ledOn(greenLight, greenTone)
-        ledOn(yellowLight, yellowTone)
-        ledOn(blueLight, blueTone)
-        ledOn(redLight, redTone)
+        GPIO.output(redLight, GPIO.HIGH)
+        wiringpi.softToneWrite(Sound, 1100)
+        sleep(0.1)
+        GPIO.output(redLight, GPIO.LOW)
+        GPIO.output(blueLight, GPIO.HIGH)
+        wiringpi.softToneWrite(Sound, 1000)
+        sleep(0.1)
+        GPIO.output(blueLight, GPIO.LOW)
+        GPIO.output(yellowLight, GPIO.HIGH)
+        wiringpi.softToneWrite(Sound, 900)
+        sleep(0.1)
+        GPIO.output(yellowLight, GPIO.LOW)
+        GPIO.output(greenLight, GPIO.HIGH)
+        wiringpi.softToneWrite(Sound, 790)
+        sleep(0.1)
+        GPIO.output(greenLight, GPIO.LOW) 
 
 
 
