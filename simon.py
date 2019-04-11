@@ -122,6 +122,7 @@ leds = []
 gameOn = True
 counter = 0
 while (gameOn):
+        sleep(0.5)
         leds.append(random.randint(0,3))
         for i in range (len(leds)):
                 if leds[i] == 0:
