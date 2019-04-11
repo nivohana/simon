@@ -97,6 +97,22 @@ def loser():
         wiringpi.softToneWrite(speaker, 790)
         sleep(0.1)
         GPIO.output(greenLight, GPIO.LOW) 
+        wiringpi.softToneWrite(speaker, 1100)
+        sleep(0.1)
+        GPIO.output(redLight, GPIO.LOW)
+        GPIO.output(blueLight, GPIO.HIGH)
+        wiringpi.softToneWrite(speaker, 1000)
+        sleep(0.1)
+        GPIO.output(blueLight, GPIO.LOW)
+        GPIO.output(yellowLight, GPIO.HIGH)
+        wiringpi.softToneWrite(speaker, 900)
+        sleep(0.1)
+        GPIO.output(yellowLight, GPIO.LOW)
+        GPIO.output(greenLight, GPIO.HIGH)
+        wiringpi.softToneWrite(speaker, 790)
+        sleep(0.1)
+        GPIO.output(greenLight, GPIO.LOW) 
+        wiringpi.softToneWrite(speaker, 0)
 
 
 
