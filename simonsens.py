@@ -24,7 +24,7 @@ greenTone = 469
 
 greenTone = 469
 
-
+##n dkjnfskjdsnfdskljndskj
 #speaker GPIO
 speaker = 5
 wiringpi.wiringPiSetupGpio()
